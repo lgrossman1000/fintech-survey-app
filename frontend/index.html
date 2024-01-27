@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTech Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FinTech Product Survey</h1>
+        <form id="surveyForm">
+            <label for="age">Your Age:</label>
+            <input type="number" id="age" name="age" min="18" required>
+
+            <label for="experience">Years of Experience with Financial Products:</label>
+            <input type="number" id="experience" name="experience" min="0" required>
+
+            <label for="productUse">How often do you use our product?</label>
+            <select id="productUse" name="productUse">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="rarely">Rarely</option>
+            </select>
+
+            <label for="satisfaction">Overall, how satisfied are you with the product?</label>
+            <input type="range" id="satisfaction" name="satisfaction" min="1" max="5">
+
+            <label for="feedback">Additional feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+
+            <button type="submit">Submit Survey</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
