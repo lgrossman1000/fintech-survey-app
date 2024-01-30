@@ -1,0 +1,23 @@
+[
+    {
+        "text": "What brought you to our platform?",
+        "type": "multiple-choice",
+        "answers": ["Looking up a specific company", "Industry KPIs", "Looking up comps", "Valuation Multiples", "Other"]
+    },
+    {
+        "text": "What industry are you in?",
+        "type": "single-choice",
+        "answers": ["Consulting", "Investing", "Investment Banking", "Marketing", "Sales", "Start-up Founder", "Student", "Other"]
+    },
+    {
+        "text": "What are you looking for in a company profile?",
+        "type": "multiple-choice",
+        "answers": ["Historical M&A and Financing Activity", "Contact Information", "Ownership Structure", "Products and Services Overview", "Financial Figures", "Business Model", "Student", "Other"]
+    },
+    {
+        "text": "What kind of company data is most relevent to you?",
+        "type": "multiple-choice",
+        "answers": ["Public Company Data", "Private Company Data", "Investment Firm Data"]
+    }
+
+]
