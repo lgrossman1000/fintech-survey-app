@@ -18,3 +18,15 @@ class SurveyAnswer(db.Model):
 
     def __repr__(self):
         return f'<SurveyAnswer {self.answer_text}>'
+
+class UserResponse(db.Model):
+    __tablename__ = 'user_responses'
+
+    id = db.Column(db.Integer, primary_key=True)
+    question_id = db.Column(db.Integer, db.ForeignKey('survey_questions.id'), nullable=False)
+    answer_id = db.Column(db.Integer, db.ForeignKey('survey_answers.id'), nullable=False)
+    # Add a user_id field if you are tracking individual users
+    
+    def __repr__(self):
+        return f'<UserResponse question_id={self.question_id} answer_id={self.answer_id}>'
+
